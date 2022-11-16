@@ -26,5 +26,5 @@ function generarDominios() {
       }
     }
   }
-  document.getElementById("generarDominios").innerHTML = dominios;
+  document.getElementById("dominio").innerHTML = dominios;
 }
