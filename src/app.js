@@ -21,8 +21,7 @@ function generarDominios() {
     for (let j = 0; j < adj.length; j++) {
       for (let k = 0; k < noun.length; k++) {
         let dominios = pronoun[i] + adj[j] + noun[k] + ".com";
-        dominios =
-          dominios + '<li class= "list-group-item">' + dominios + "<li>";
+        dominios = dominio + '<li class="list-group-item">' + dominios + "<li>";
       }
     }
   }
