@@ -8,8 +8,9 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   //write your code here
   console.log("Hello Rigo from the console!");
-  document.querySelector("#btn").addEventListener("click", generarDominios);
 };
+
+document.querySelector("#btn").addEventListener("click", generarDominios);
 
 function generarDominios() {
   let pronoun = ["the", "our"];
@@ -20,10 +21,11 @@ function generarDominios() {
   for (let i = 0; i < pronoun.length; i++) {
     for (let j = 0; j < adj.length; j++) {
       for (let k = 0; k < noun.length; k++) {
-        let dominios = pronoun[i] + adj[j] + noun[k] + ".com";
-        dominios = dominio + '<li class="list-group-item">' + dominios + "<li>";
+        let concat = pronoun[i] + adj[j] + noun[k] + ".com";
+        dominios += '<li class="list-group-item">' + concat + "</li>";
       }
     }
   }
-  document.getElementById("dominio").innerHTML = dominios;
+
+  document.getElementById("dominios").innerHTML = dominios;
 }
